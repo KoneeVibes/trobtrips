@@ -1,3 +1,33 @@
-* {
-  /* outline: 1px solid red */
+@media screen and (min-width:0px) {
+  html {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    --pagePadding: 1.5rem;
+    --sectionMargin: 2rem;
+    --flexGap: 2rem;
+    --cardPadding: 2rem;
+  }
+
+  * {
+    /* outline: 1px solid red */
+  }
+}
+
+@media screen and (min-width:425px) {
+  html {
+    --pagePadding: 2rem;
+  }
+}
+
+@media screen and (min-width:768px) {
+  html {
+    --pagePadding: 3rem;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  html {
+    --pagePadding: 4.21875rem;
+  }
 }
