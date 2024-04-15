@@ -1,12 +1,12 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { HeaderProps } from "../../types/app.type";
 import { Hero } from "./styled";
 import { BaseButton } from "../buttons/styled";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-export const Header: React.FC<HeaderProps> = ({ leadText, highlightText, subLeadText, bg }) => {
+export const Header: React.FC<HeaderProps> = ({ leadText, highlightText, subLeadText, mobileBg, bg }) => {
     return (
-        <Hero bgimage={bg}>
+        <Hero mobilebgimage={mobileBg} bgimage={bg}>
             <Typography
                 variant="h1"
                 fontFamily={"Inter"}
@@ -44,26 +44,31 @@ export const Header: React.FC<HeaderProps> = ({ leadText, highlightText, subLead
                 color={"#000000"}
                 whiteSpace={"normal"}
                 marginBlockEnd={"2rem"}
+                width={{ tablet: "50%" }}
             >
                 {subLeadText}
             </Typography>
-            <BaseButton
-                location="header"
-                endIcon={<ArrowOutwardIcon />}
+            <Box
+                overflow={"hidden"}
             >
-                <Typography
-                    variant="button"
-                    fontFamily={"inherit"}
-                    fontWeight={"inherit"}
-                    fontSize={"inherit"}
-                    lineHeight={"inherit"}
-                    color={"#inherit"}
-                    whiteSpace={"normal"}
-                    textTransform={"inherit"}
+                <BaseButton
+                    location="header"
+                    endIcon={<ArrowOutwardIcon />}
                 >
-                    Get a Quote
-                </Typography>
-            </BaseButton>
+                    <Typography
+                        variant="button"
+                        fontFamily={"inherit"}
+                        fontWeight={"inherit"}
+                        fontSize={"inherit"}
+                        lineHeight={"inherit"}
+                        color={"#inherit"}
+                        whiteSpace={"normal"}
+                        textTransform={"inherit"}
+                    >
+                        Get a Quote
+                    </Typography>
+                </BaseButton>
+            </Box>
         </Hero>
     )
 }

@@ -52,8 +52,11 @@ export const Navbar: React.FC<{}> = () => {
                                 lineHeight={"normal"}
                                 color={"#000000"}
                                 textTransform={"capitalize"}
-                                padding={{ mobile: "calc(var(--cardPadding)/4)", laptop: "calc(var(--cardPadding)/4) calc(var(--cardPadding)/2)", desktop: "calc(var(--cardPadding)/4) var(--cardPadding)" }}
+                                padding={{ mobile: "calc(var(--cardPadding)/4) var(--cardPadding)", tablet: "calc(var(--cardPadding)/4) calc(var(--cardPadding)/2)", laptop: "calc(var(--cardPadding)/4) var(--cardPadding)" }}
                                 sx={{
+                                    width: "fit-content",
+                                    marginLeft: "auto",
+                                    marginRight: "auto",
                                     "&:hover": {
                                         backgroundColor: "#D5F653",
                                         borderRadius: "27px"

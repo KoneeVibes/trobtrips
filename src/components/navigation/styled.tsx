@@ -20,7 +20,7 @@ export const Nav = styled(Stack)(
                     display: openMenu ? "flex" : "none",
                     flexDirection: "column",
                     gap: "calc(2 * var(--flexGap))",
-                    margin: "var(--sectionMargin) var(--pagePadding)",
+                    padding: "var(--sectionMargin) var(--pagePadding)",
                     width: "stretch",
                     height: "stretch",
                     background: "#FFFFFF",

@@ -1,6 +1,8 @@
 import { Container } from "@mui/material";
 import { Navbar } from "../components/navigation";
 import { Header } from "../components/header";
+import headerBg from "../assets/servicesBg.svg";
+import mobileHeaderBg from "../assets/mobileHomeBg.svg";
 
 export const Services: React.FC<{}> = () => {
     return (
@@ -17,7 +19,8 @@ export const Services: React.FC<{}> = () => {
         >
             <Navbar />
             <Header
-                bg=""
+                bg={headerBg}
+                mobileBg={mobileHeaderBg}
                 leadText="Sustainable adventures."
                 highlightText="Minimize impact "
                 subLeadText="Create memories and empower communities."

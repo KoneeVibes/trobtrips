@@ -1,5 +1,6 @@
 export type HeaderProps = {
     bg: string,
+    mobileBg: string,
     leadText: string,
     highlightText: string,
     subLeadText: string
@@ -7,6 +8,7 @@ export type HeaderProps = {
 
 export type HeroProps = {
     bgimage: string
+    mobilebgimage: string
 };
 
 export type BaseButtonProps = {
