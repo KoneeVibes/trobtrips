@@ -21,7 +21,7 @@ export const Home: React.FC<{}> = () => {
             <Header
                 bg={headerBg}
                 mobileBg={mobileHeaderBg}
-                leadText="Unforgettable adventures."
+                leadText="Unforgettable adven."
                 highlightText="Minimal footprint."
                 subLeadText="Journeys that change you and empower communities."
             />
